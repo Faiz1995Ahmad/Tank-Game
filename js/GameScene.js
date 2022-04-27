@@ -45,7 +45,7 @@ export default class GameScene extends Phaser.Scene
         this.BulletInstantiate();   
         //Camera propetry set
         this.cameras.main.startFollow(this.tank);
-        this.cameras.main.setZoom(1.5)
+        // this.cameras.main.setZoom(1.5);
         this.cameras.main.setBounds(0,0,game.config.width,game.config.height);
         this.SetOffset();
         console.log(this.tank.frame.name);
@@ -248,28 +248,28 @@ export default class GameScene extends Phaser.Scene
         let obs6 =  obj.CreateObstacles(this,'tile',game.config.width/5.9, game.config.height/1.4,true,100,1);
         let obs7 =  obj.CreateObstacles(this,'tile',game.config.width/1.12, game.config.height/1.4,true,100,1);
         let obs8 =  obj.CreateObstacles(this,'tile',game.config.width/1.122, game.config.height/5.8,false,100,0);
-        let obs9 =  obj.CreateObstacles(this,'tile',game.config.width/7.4, game.config.height/10,false,100,0); 
+        let obs9 =  obj.CreateObstacles(this,'tile',game.config.width/7.48, game.config.height/9.58,false,100,0); 
         let obs10 =  obj.CreateObstacles(this,'tile',game.config.width/1.82, game.config.height/1.39,false,100,0);  
         let obs11 =  obj.CreateObstacles(this,'tile',game.config.width/1.51, game.config.height/5.8,false,100,0); 
-        let obs12 =  obj.CreateObstacles(this,'tile',game.config.width/1.28, game.config.height/1.08,false,100,0); 
+        let obs12 =  obj.CreateObstacles(this,'tile',game.config.width/1.287, game.config.height/1.08,false,100,0); 
         let obs13 =  obj.CreateObstacles(this,'tile',game.config.width/10.4, game.config.height/1.17,false,100,0); 
         let obs14 =  obj.CreateObstacles(this,'tile',game.config.width/10.5, game.config.height/1.95,false,100,0); 
-        let obs15 =  obj.CreateObstacles(this,'tile',game.config.width/1.122, game.config.height/1.95,false,100,0); 
-        this.obstacles.add(obs1 ); 
-        this.obstacles.add(obs2 ); 
-        this.obstacles.add(obs3 ); 
-        this.obstacles.add(obs4 ); 
-        this.obstacles.add(obs5 ); 
-        this.obstacles.add(obs6 ); 
-        this.obstacles.add(obs7 ); 
-        this.obstacles.add(obs8 ); 
-        this.obstacles.add(obs9 ); 
-        this.obstacles.add(obs10); 
-        this.obstacles.add(obs11); 
-        this.obstacles.add(obs12); 
-        this.obstacles.add(obs13); 
-        this.obstacles.add(obs14); 
-        this.obstacles.add(obs15); 
+        let obs15 =  obj.CreateObstacles(this,'tile',game.config.width/1.123, game.config.height/1.95,false,100,0); 
+        // this.obstacles.add(obs1 ); 
+        // this.obstacles.add(obs2 ); 
+        // this.obstacles.add(obs3 ); 
+        // this.obstacles.add(obs4 ); 
+        // this.obstacles.add(obs5 ); 
+        // this.obstacles.add(obs6 ); 
+        // this.obstacles.add(obs7 ); 
+        // this.obstacles.add(obs8 ); 
+        // this.obstacles.add(obs9 ); 
+        // this.obstacles.add(obs10); 
+        // this.obstacles.add(obs11); 
+        // this.obstacles.add(obs12); 
+        // this.obstacles.add(obs13); 
+        // this.obstacles.add(obs14); 
+        // this.obstacles.add(obs15); 
         this.physics.add.collider(  this.obstacles, this.tank);
     }
     SetOffset()
